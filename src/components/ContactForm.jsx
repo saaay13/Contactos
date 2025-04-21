@@ -9,7 +9,7 @@ import { supabase } from '../lib/supabase';
 const contactoSchema = z.object({
   nombre: z
     .string()
-    .min(3, { message: 'El nombre debe tener al menos 3 caracteres' })
+    .min(3, { message: 'El nombre debe tener por lo menos 3 caracteres' })
     .max(50, { message: 'El nombre no puede exceder 50 caracteres' }),
   correo: z
     .string()
