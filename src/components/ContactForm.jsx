@@ -17,7 +17,7 @@ const contactoSchema = z.object({
   telefono: z
     .string()
     .regex(/^[0-9]{8,12}$/, {
-      message: 'Ingrese un número de teléfono válido (8–12 dígitos)',
+      message: 'Ingrese un número de teléfono válido porfi (8–12 dígitos)',
     }),
 });
 
